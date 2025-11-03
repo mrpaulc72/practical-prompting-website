@@ -1,0 +1,767 @@
+/* ============================================
+   PRACTICAL PROMPTING - HOMEPAGE STYLESHEET
+   ============================================
+   Brand: "The AI Realist"
+   Primary Colors: Charcoal Gray (#333333), Orange (#F95700)
+   Backgrounds: Tan (#ECE9DE), White (#FFFFFF)
+   Typography: Poppins (Headlines), DM Sans (Body)
+   ============================================ */
+
+/* ============================================
+   CSS RESET & BASE STYLES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ECE9DE;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+a {
+    color: #F95700;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* ============================================
+   LAYOUT & CONTAINERS
+   ============================================ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* ============================================
+   BUTTONS & CTA
+   ============================================ */
+.cta-button {
+    display: inline-block;
+    background-color: #F95700;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1.25rem 3rem;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 87, 0, 0.4);
+    opacity: 1;
+}
+
+/* ============================================
+   SECTION 1: HERO
+   ============================================ */
+.hero-section {
+    background-color: #ECE9DE;
+    padding: 6rem 0 5rem;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.eyebrow {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #F95700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+}
+
+.hero-headline {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #333333;
+}
+
+.hero-subheadline {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+.social-proof {
+    font-size: 0.95rem;
+    color: #333333;
+    margin-top: 1rem;
+}
+
+.stars {
+    color: #F95700;
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   SECTION 2: THREE QUICK OUTCOMES
+   ============================================ */
+.outcomes-section {
+    background-color: #FFFFFF;
+    padding: 5rem 0;
+}
+
+.outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.outcome-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.outcome-icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.outcome-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.outcome-card p {
+    font-size: 1.125rem;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ============================================
+   SECTION 3: PROBLEM IDENTIFICATION
+   ============================================ */
+.problem-section {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 5rem 0;
+}
+
+.problem-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.problem-section h2 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.problem-body {
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+.problem-body p {
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+
+.problem-body .highlight {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* ============================================
+   SECTION 4: SOLUTION PRESENTATION
+   ============================================ */
+.solution-section {
+    background-color: #ECE9DE;
+    padding: 5rem 0;
+}
+
+.solution-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.solution-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.solution-body {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+.solution-body .highlight {
+    font-size: 1.3rem;
+}
+
+.video-placeholder {
+    margin-top: 3rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================================
+   SECTION 5: TESTIMONIALS
+   ============================================ */
+.testimonials-section {
+    background-color: #FFFFFF;
+    padding: 5rem 0;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.testimonial-card {
+    background-color: #ECE9DE;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-image {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #F95700;
+}
+
+.testimonial-rating {
+    margin-bottom: 1rem;
+}
+
+.testimonial-card blockquote p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333333;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-attribution {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+/* ============================================
+   SECTION 6: THREE-STEP PROCESS
+   ============================================ */
+.process-section {
+    background-color: #ECE9DE;
+    padding: 5rem 0;
+}
+
+.process-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.process-step {
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.step-number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #F95700;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.process-step h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.process-step p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* ============================================
+   SECTION 7: ADVANTAGES (THE FLEX)
+   ============================================ */
+.advantages-section {
+    background-color: #FFFFFF;
+    padding: 5rem 0;
+}
+
+.advantages-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.advantages-subheadline {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 3rem;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.advantage-item {
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.advantage-icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.advantage-item h3 {
+    font-size: 1.375rem;
+    margin-bottom: 0.75rem;
+    color: #333333;
+}
+
+.advantage-item p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* ============================================
+   SECTION 9: FAQ (ACCORDION)
+   ============================================ */
+.faq-section {
+    background-color: #ECE9DE;
+    padding: 5rem 0;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq-accordion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.5rem 2rem;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #ECE9DE;
+}
+
+.faq-toggle {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #F95700;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 2rem;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 0 2rem 1.5rem;
+}
+
+.faq-answer p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #333333;
+}
+
+/* ============================================
+   SECTION 10: FINAL CTA
+   ============================================ */
+.final-cta-section {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 5rem 0;
+}
+
+.final-cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.final-cta-text {
+    flex: 1;
+}
+
+.final-cta-section h2 {
+    font-size: 2.75rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.final-cta-subheadline {
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.final-cta-image {
+    flex-shrink: 0;
+}
+
+.final-cta-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #F95700;
+    object-fit: cover;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 3rem 0 1.5rem;
+    border-top: 1px solid #555555;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-column h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-column a {
+    color: #ECE9DE;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #F95700;
+    opacity: 1;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #555555;
+}
+
+.footer-copyright p {
+    font-size: 0.875rem;
+    color: #ECE9DE;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-headline {
+        font-size: 2.75rem;
+    }
+    
+    .outcomes-grid,
+    .testimonials-grid,
+    .process-grid,
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Mobile (up to 767px) */
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    /* Hero Section */
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-headline {
+        font-size: 2rem;
+    }
+    
+    .hero-subheadline {
+        font-size: 1.125rem;
+    }
+    
+    .cta-button {
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+    
+    /* Grid Layouts to Single Column */
+    .outcomes-grid,
+    .testimonials-grid,
+    .process-grid,
+    .advantages-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Step Numbers */
+    .step-number {
+        font-size: 3.5rem;
+    }
+    
+    /* Final CTA */
+    .final-cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .final-cta-section h2 {
+        font-size: 2rem;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        text-align: center;
+    }
+}
+
+/* Large Desktops (1440px+) */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-headline {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+}
+

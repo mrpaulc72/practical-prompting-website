@@ -1,0 +1,91 @@
+# Practical Prompting Homepage - Git Ignore File
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables (if you add any)
+.env
+.env.local
+.env.production
+
+# Build/Distribution (if you add build tools later)
+dist/
+build/
+*.min.js
+*.min.css
+
+# Backup files
+*.bak
+*.backup
+*-backup.*
+
+# Compressed files (except intentional downloads)
+*.zip
+*.tar.gz
+*.rar
+
+# Keep the images folder structure but ignore large source files
+# images/source/
+# images/originals/
+
+# Analytics/Tracking (if you download reports)
+analytics/
+reports/
+
+# Notes (personal notes, not documentation)
+notes.txt
+todo.txt
+scratch.md
+
