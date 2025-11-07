@@ -3,252 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stop guessing. Start systematizing AI. Learn the proven 3-layer framework that stops inconsistent AI results and actually works.">
-    <title>Practical Prompting | Stop Guessing. Start Systematizing AI.</title>
+    <meta name="description" content="Reliable AI Results Are Not Random. Stop wasting hours on inconsistent prompts. Get the systematic methodology to make AI a reliable asset.">
+    <title>Practical Prompting | Reliable AI Results Are Not Random</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=DM+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Section 1: Hero Section -->
+    <!-- SECTION 1: Hero Section (Above the Fold) -->
     <section id="hero" class="hero-section">
+        <div class="blueprint-grid"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <p class="eyebrow">FOR SERVICE PROVIDERS WHO USE AI DAILY</p>
-                    <h1 class="hero-headline">Why Do Your AI Prompts Fail 70% of the Time?</h1>
-                    <p class="hero-subheadline">You're not "bad at prompts." You're just missing the methodology. I'll show you the 3-layer framework that stops inconsistent results and <em>actually</em> works.</p>
-                    <a href="https://practicalprompting.co/sales/" class="cta-button">FIX MY PROMPTS</a>
+                    <p class="eyebrow">FOR SERVICE PROVIDERS FRUSTRATED WITH INCONSISTENT AI</p>
+                    <h1 class="hero-headline">Reliable AI Results Are Not Random.</h1>
+                    <p class="hero-subheadline">Stop wasting hours on inconsistent prompts. Get the systematic methodology to make AI a reliable asset, not a frustrating toy.</p>
+                    <a href="#framework" class="cta-button">See The Framework</a>
                     <p class="social-proof">
                         <span class="stars">★★★★★</span>
-                        Join 200+ service providers who've stopped guessing and started systematizing.
+                        Join 200+ Service Providers Who Got Systematic
                     </p>
                 </div>
-                <div class="hero-image">
-                    <img src="https://via.placeholder.com/1200x800/ECE9DE/333333?text=Frustrated+with+AI+Results" alt="Frustration with inconsistent AI output">
+                <div class="hero-visual">
+                    <!-- Construction Crane Lifting CONTEXT Block -->
+                    <svg class="crane-illustration" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Blueprint grid pattern in background -->
+                        <defs>
+                            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#4A6A7C" stroke-width="0.5" opacity="0.3"/>
+                            </pattern>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        
+                        <rect width="600" height="500" fill="url(#grid)" opacity="0.3"/>
+                        
+                        <!-- Crane Base -->
+                        <rect x="50" y="400" width="80" height="100" fill="#F95700" opacity="0.9"/>
+                        <rect x="60" y="410" width="60" height="80" fill="#333333"/>
+                        
+                        <!-- Crane Tower -->
+                        <rect x="85" y="200" width="10" height="200" fill="#F95700"/>
+                        
+                        <!-- Crane Arm -->
+                        <line x1="90" y1="200" x2="400" y2="200" stroke="#F95700" stroke-width="8"/>
+                        <line x1="90" y1="200" x2="50" y2="250" stroke="#F95700" stroke-width="6"/>
+                        
+                        <!-- Cable -->
+                        <line x1="300" y1="200" x2="300" y2="280" stroke="#4A6A7C" stroke-width="2" stroke-dasharray="5,5"/>
+                        
+                        <!-- CONTEXT Block Being Lifted (Glowing) -->
+                        <g filter="url(#glow)">
+                            <rect x="250" y="280" width="100" height="80" fill="#F95700" stroke="#F95700" stroke-width="2"/>
+                            <text x="300" y="310" text-anchor="middle" fill="#FFFFFF" font-family="Poppins, sans-serif" font-size="14" font-weight="700">CONTEXT</text>
+                            <text x="300" y="330" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, sans-serif" font-size="10">Who, Why,</text>
+                            <text x="300" y="345" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, sans-serif" font-size="10">Background</text>
+                        </g>
+                        
+                        <!-- Foundation Blocks (LAYER & OUTPUT) -->
+                        <rect x="380" y="400" width="100" height="80" fill="#4A6A7C" opacity="0.6"/>
+                        <text x="430" y="430" text-anchor="middle" fill="#FFFFFF" font-family="Poppins, sans-serif" font-size="14" font-weight="600">LAYER</text>
+                        <text x="430" y="450" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, sans-serif" font-size="9">Rules &</text>
+                        <text x="430" y="463" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, sans-serif" font-size="9">Guidelines</text>
+                        
+                        <rect x="490" y="400" width="100" height="80" fill="#4A6A7C" opacity="0.6"/>
+                        <text x="540" y="430" text-anchor="middle" fill="#FFFFFF" font-family="Poppins, sans-serif" font-size="14" font-weight="600">OUTPUT</text>
+                        <text x="540" y="450" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, sans-serif" font-size="9">Format &</text>
+                        <text x="540" y="463" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, sans-serif" font-size="9">Structure</text>
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 2: Three Quick Outcomes -->
+    <!-- SECTION 2: Three Quick Outcomes -->
     <section id="outcomes" class="outcomes-section">
         <div class="container">
             <div class="outcomes-grid">
                 <div class="outcome-card">
                     <div class="outcome-icon">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="28" stroke="#F95700" stroke-width="4"/>
-                            <path d="M18 30L26 38L42 22" stroke="#F95700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="23" stroke="#F95700" stroke-width="3"/>
+                            <path d="M15 25L21 31L35 17" stroke="#F95700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>End Inconsistent Output</h3>
-                    <p>Stop getting brilliant results on Monday and garbage on Tuesday. Get reliable, predictable output, every time.</p>
+                    <h3>End Prompt Frustration</h3>
+                    <p>Stop the endless trial-and-error cycle. Get a systematic approach that works every time.</p>
                 </div>
                 <div class="outcome-card">
                     <div class="outcome-icon">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="28" stroke="#F95700" stroke-width="4"/>
-                            <path d="M18 30L26 38L42 22" stroke="#F95700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="23" stroke="#F95700" stroke-width="3"/>
+                            <path d="M15 25L21 31L35 17" stroke="#F95700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Make AI Sound Like You</h3>
-                    <p>Use my "Voice Calibration Protocol" to kill "Corporate ChatGPT Voice" and get brand-aligned content in one take.</p>
+                    <h3>Get Reliable, Usable Output</h3>
+                    <p>Consistent, high-quality results you can actually use without extensive editing.</p>
                 </div>
                 <div class="outcome-card">
                     <div class="outcome-icon">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="28" stroke="#F95700" stroke-width="4"/>
-                            <path d="M18 30L26 38L42 22" stroke="#F95700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="23" stroke="#F95700" stroke-width="3"/>
+                            <path d="M15 25L21 31L35 17" stroke="#F95700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Reclaim 10+ Hours/Week</h3>
-                    <p>Stop wasting time on endless trial-and-error. Ship your content and get back to billable client work.</p>
+                    <h3>Reclaim 10+ Hours Weekly</h3>
+                    <p>Eliminate editing exhaustion and get back to billable, high-value work.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 3: Problem Identification -->
+    <!-- SECTION 3: Problem Identification -->
     <section id="problem" class="problem-section">
         <div class="container">
             <div class="problem-content">
-                <h2>That "30% Success Rate" Is Costing You a Fortune.</h2>
+                <h2>That "30% Success Rate" is Costing You.</h2>
                 <div class="problem-body">
-                    <p>You're an expert at what you do, but using AI feels like a gamble.</p>
-                    <p>You're stuck in the "prompt and pray" cycle: copy a prompt from a "guru," paste it, and hope. When it fails, you tweak a few words and try again... and again... and again.</p>
-                    <p>You spend more time editing that generic, unusable output than it would have taken to write it yourself.</p>
-                    <p>You know AI <em>should</em> be a revolutionary tool, but right now it's just a frustrating, inconsistent, time-sucking intern.</p>
-                    <p class="highlight">Your problem isn't the tool, and it's not you. It's that no one showed you the <em>systematic methodology</em> to make it reliable.</p>
+                    <p>You use AI 5-10 times a day, but the results are a gamble. The same prompt works one day and fails the next.</p>
+                    <p>You're stuck in <strong>'Editing Exhaustion,'</strong> spending more time fixing generic, corporate-sounding AI output than it would take to write it from scratch.</p>
+                    <p>You know AI <em>should</em> be a superpower, but you're missing the <strong>architecture</strong> that makes it reliable.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 4: Solution Presentation -->
+    <!-- SECTION 4: Solution Presentation -->
     <section id="solution" class="solution-section">
         <div class="container">
             <div class="solution-content">
-                <h2>Stop Chasing "Hacks." Start Using a System.</h2>
+                <h2>Stop Guessing. Start Engineering.</h2>
                 <div class="solution-body">
-                    <p>My name is Paul Chambers. I'm not an "AI guru." I'm an AI realist.</p>
-                    <p>I've spent thousands of hours testing prompts to find out <em>why</em> they fail. The secret isn't a "magic prompt" or a "hack." It's a reliable, 3-layer framework (the CLO Framework) that works every time.</p>
-                    <p class="highlight">I call it the <strong>Content Scale AI Blueprint</strong>.</p>
-                    <p>It's the missing methodology that turns AI from a frustrating gamble into a reliable, full-time assistant.</p>
+                    <p>The problem isn't the AI; it's the approach. You don't need 'hacks' or '1000 prompt packs'—you need an <strong>architecture</strong>.</p>
+                    <p>We provide the <strong>CLO Framework</strong>, a systematic methodology for building prompts that deliver consistent, high-quality, and on-brand results, just like an engineer follows a blueprint.</p>
+                    <p class="framework-intro">It's a 3-part architecture for every successful prompt:</p>
                 </div>
-                <div class="video-placeholder">
-                    <div class="video-container">
-                        <img src="https://via.placeholder.com/1280x720/333333/FFFFFF?text=▶+Watch+The+AI+Realist+Video" alt="Video: The AI Realist Methodology">
+                <div class="clo-framework">
+                    <div class="clo-component">
+                        <div class="clo-letter">C</div>
+                        <h3>Context & Persona</h3>
+                        <p>Define who the AI is (its role, expertise, and voice) and the background of the task.</p>
+                        <p class="clo-emphasis">This is the component most people miss—and it's why their results are generic.</p>
+                    </div>
+                    <div class="clo-arrow">
+                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10" y1="30" x2="50" y2="30" stroke="#4A6A7C" stroke-width="2"/>
+                            <polygon points="50,30 40,25 40,35" fill="#4A6A7C"/>
+                        </svg>
+                    </div>
+                    <div class="clo-component">
+                        <div class="clo-letter">L</div>
+                        <h3>Layer</h3>
+                        <p>Layer in the rules, constraints, guidelines, and information the AI must consider.</p>
+                    </div>
+                    <div class="clo-arrow">
+                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10" y1="30" x2="50" y2="30" stroke="#4A6A7C" stroke-width="2"/>
+                            <polygon points="50,30 40,25 40,35" fill="#4A6A7C"/>
+                        </svg>
+                    </div>
+                    <div class="clo-component">
+                        <div class="clo-letter">O</div>
+                        <h3>Output</h3>
+                        <p>Define the exact format, structure, and style of the response you need.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 5: Social Proof (Testimonials) -->
+    <!-- SECTION 5: Social Proof & Testimonials -->
     <section id="testimonials" class="testimonials-section">
         <div class="container">
-            <h2>Proof. Not Hype.</h2>
+            <h2>Proof, Not Hype.</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="https://via.placeholder.com/150/ECE9DE/333333?text=Client+1" alt="Client testimonial">
-                    </div>
-                    <div class="testimonial-rating">
-                        <span class="stars">★★★★★</span>
+                    <div class="testimonial-header">
+                        <div class="testimonial-rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <span class="verified-badge">Verified Practitioner</span>
                     </div>
                     <blockquote>
-                        <p>"I always thought I was just 'bad at prompts.' Paul's CLO framework clicked in 20 minutes. My prompt success rate went from 30% to 90% almost overnight. This is the system I've been missing."</p>
+                        <p>"I was skeptical of <em>another</em> AI course. This is different. It's not a course; it's an operating system. I finally understand <em>why</em> my prompts were failing."</p>
                     </blockquote>
-                    <p class="testimonial-attribution">— [Name], Business Consultant</p>
+                    <p class="testimonial-attribution">— Agency Owner</p>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="https://via.placeholder.com/150/ECE9DE/333333?text=Client+2" alt="Client testimonial">
-                    </div>
-                    <div class="testimonial-rating">
-                        <span class="stars">★★★★★</span>
+                    <div class="testimonial-header">
+                        <div class="testimonial-rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <span class="verified-badge">Verified Practitioner</span>
                     </div>
                     <blockquote>
-                        <p>"This is the first time AI has actually sounded like me. The Voice Calibration Protocol is worth the price of admission alone. I'm no longer fighting the 'Corporate ChatGPT Voice'."</p>
+                        <p>"My 'Editing Exhaustion' was real. The Voice Calibration module alone saved me 8-10 hours in the first week. My AI content finally sounds like me."</p>
                     </blockquote>
-                    <p class="testimonial-attribution">— [Name], Executive Coach</p>
+                    <p class="testimonial-attribution">— Business Coach</p>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="https://via.placeholder.com/150/ECE9DE/333333?text=Client+3" alt="Client testimonial">
-                    </div>
-                    <div class="testimonial-rating">
-                        <span class="stars">★★★★★</span>
+                    <div class="testimonial-header">
+                        <div class="testimonial-rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <span class="verified-badge">Verified Practitioner</span>
                     </div>
                     <blockquote>
-                        <p>"I saved 12 hours in the first week. This isn't just a course, it's an SOP for my entire content engine. It's the most practical, no-BS AI training that exists."</p>
+                        <p>"I used the CLO framework to build a client intake automation. It worked the first time. I'm now systematizing my entire backend."</p>
                     </blockquote>
-                    <p class="testimonial-attribution">— [Name], Agency Owner</p>
+                    <p class="testimonial-attribution">— Consultant</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 6: Simple Three-Step Process -->
+    <!-- SECTION 6: Simple Three-Step Process -->
     <section id="process" class="process-section">
         <div class="container">
-            <h2>From AI Frustration to AI Mastery in 3 Steps</h2>
-            <div class="process-grid">
+            <h2>Your 3-Step Path to a Reliable System</h2>
+            <div class="process-flow">
                 <div class="process-step">
                     <div class="step-number">1</div>
-                    <h3>Get the Blueprint.</h3>
-                    <p>Get instant access to the "Content Scale AI Blueprint" and the simple, systematic 3-layer framework.</p>
+                    <div class="step-content">
+                        <h3>See The Framework</h3>
+                        <p>Get the blueprint for the core CLO methodology.</p>
+                    </div>
+                </div>
+                <div class="process-arrow">
+                    <svg width="80" height="40" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="10" y1="20" x2="70" y2="20" stroke="#4A6A7C" stroke-width="2" stroke-dasharray="5,5"/>
+                        <polygon points="70,20 60,15 60,25" fill="#4A6A7C"/>
+                    </svg>
                 </div>
                 <div class="process-step">
                     <div class="step-number">2</div>
-                    <h3>Apply the Framework.</h3>
-                    <p>Use the proven templates and voice calibration protocols to stop getting inconsistent results and make AI finally sound like you.</p>
+                    <div class="step-content">
+                        <h3>We Engineer Your Solution</h3>
+                        <p>We analyze your workflow and build the prompt architecture you need.</p>
+                    </div>
+                </div>
+                <div class="process-arrow">
+                    <svg width="80" height="40" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="10" y1="20" x2="70" y2="20" stroke="#4A6A7C" stroke-width="2" stroke-dasharray="5,5"/>
+                        <polygon points="70,20 60,15 60,25" fill="#4A6A7C"/>
+                    </svg>
                 </div>
                 <div class="process-step">
                     <div class="step-number">3</div>
-                    <h3>Reclaim Your Time.</h3>
-                    <p>Stop wasting 10-20 hours a month on prompt-and-pray. Ship more content, faster, and get back to what <em>you're</em> best at.</p>
+                    <div class="step-content">
+                        <h3>Build, Automate, & Scale</h3>
+                        <p>Use your new, reliable AI assets to save time and deliver better work.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 7: The "Flex" Section (Your Advantages) -->
+    <!-- SECTION 7: The Flex Section (Unique Advantages) -->
     <section id="advantages" class="advantages-section">
         <div class="container">
-            <h2>This Isn't Another "Prompt Pack" of Random Tips.</h2>
-            <p class="advantages-subheadline">It's a complete methodology for <em>why</em> prompts fail and how to fix them.</p>
-            <div class="advantages-grid">
-                <div class="advantage-item">
-                    <div class="advantage-icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="5" y="5" width="40" height="40" stroke="#F95700" stroke-width="3" fill="none"/>
-                            <path d="M15 25L22 32L35 18" stroke="#F95700" stroke-width="3" stroke-linecap="round"/>
+            <h2>This Isn't Another 'Prompt Pack' of Random Tips</h2>
+            <div class="reasons-list">
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#F95700" stroke-width="2"/>
+                            <path d="M9 15L13 19L21 11" stroke="#F95700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>A Systematic Framework (CLO)</h3>
-                    <p>Not just <em>what</em> to prompt, but <em>why</em> it works.</p>
+                    <div class="reason-content">
+                        <h4>A Focus on Methodology, Not Hacks</h4>
+                    </div>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="25" cy="25" r="20" stroke="#F95700" stroke-width="3" fill="none"/>
-                            <path d="M25 15V25L32 28" stroke="#F95700" stroke-width="3" stroke-linecap="round"/>
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#F95700" stroke-width="2"/>
+                            <path d="M9 15L13 19L21 11" stroke="#F95700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>The Voice Calibration Protocol™</h3>
-                    <p>The exact system to make AI sound like you, not a robot.</p>
+                    <div class="reason-content">
+                        <h4>Built for Service Providers, Not Hobbyists</h4>
+                    </div>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 25L20 35L40 15" stroke="#F95700" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#F95700" stroke-width="2"/>
+                            <path d="M9 15L13 19L21 11" stroke="#F95700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Focus on "Proof, Not Hype"</h3>
-                    <p>Every technique is "tested 50 times" and shown with real-world examples.</p>
+                    <div class="reason-content">
+                        <h4>The Proven CLO Framework</h4>
+                    </div>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25 5L30 20L45 22L35 32L38 47L25 39L12 47L15 32L5 22L20 20L25 5Z" stroke="#F95700" stroke-width="2.5" fill="none"/>
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#F95700" stroke-width="2"/>
+                            <path d="M9 15L13 19L21 11" stroke="#F95700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Solves Inconsistency</h3>
-                    <p>Built to fix the #1 problem: "Inconsistent Output Quality".</p>
+                    <div class="reason-content">
+                        <h4>Advanced Voice Calibration Techniques</h4>
+                    </div>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 25C15 25 20 15 25 15C30 15 35 25 35 25C35 25 30 35 25 35C20 35 15 25 15 25Z" stroke="#F95700" stroke-width="3" fill="none"/>
-                            <circle cx="25" cy="25" r="5" stroke="#F95700" stroke-width="3"/>
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#F95700" stroke-width="2"/>
+                            <path d="M9 15L13 19L21 11" stroke="#F95700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Debunks Failures</h3>
-                    <p>Learn how to <em>fix</em> a broken prompt, not just throw it away.</p>
+                    <div class="reason-content">
+                        <h4>Systematic Testing & Verification Layers</h4>
+                    </div>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="25" cy="18" r="8" stroke="#F95700" stroke-width="3" fill="none"/>
-                            <path d="M10 42C10 32 16 28 25 28C34 28 40 32 40 42" stroke="#F95700" stroke-width="3" stroke-linecap="round"/>
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#F95700" stroke-width="2"/>
+                            <path d="M9 15L13 19L21 11" stroke="#F95700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3>Honest & Anti-Hype</h3>
-                    <p>We're "AI Realists". I'll tell you what AI <em>sucks</em> at, too.</p>
+                    <div class="reason-content">
+                        <h4>We're Practitioners, Not Gurus</h4>
+                    </div>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#F95700" stroke-width="2"/>
+                            <path d="M9 15L13 19L21 11" stroke="#F95700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="reason-content">
+                        <h4>Honest, Evidence-Based Approach</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 9: Frequently Asked Questions (FAQ) -->
+    <!-- SECTION 8: Features Section (Logical Justification) -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Your Prompt Engineering Toolkit</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="10" width="30" height="30" stroke="#4A6A7C" stroke-width="1.5"/>
+                            <line x1="15" y1="20" x2="35" y2="20" stroke="#4A6A7C" stroke-width="1.5"/>
+                            <line x1="15" y1="25" x2="35" y2="25" stroke="#4A6A7C" stroke-width="1.5"/>
+                            <line x1="15" y1="30" x2="35" y2="30" stroke="#4A6A7C" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h4>The Core CLO Framework Blueprint</h4>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="25,10 40,20 40,35 25,45 10,35 10,20" stroke="#4A6A7C" stroke-width="1.5" fill="none"/>
+                            <circle cx="25" cy="27" r="8" stroke="#4A6A7C" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h4>Advanced Prompt Architecture Models</h4>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 10 L25 40 M15 20 L35 20 M15 30 L35 30" stroke="#4A6A7C" stroke-width="1.5"/>
+                            <circle cx="25" cy="25" r="12" stroke="#4A6A7C" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <h4>Voice Calibration & Tonal Templates</h4>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="12" y="12" width="26" height="26" stroke="#4A6A7C" stroke-width="1.5"/>
+                            <path d="M18 25L23 30L32 21" stroke="#4A6A7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Systematic Testing & Debugging Checklist</h4>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="15" stroke="#4A6A7C" stroke-width="1.5"/>
+                            <circle cx="25" cy="25" r="5" stroke="#4A6A7C" stroke-width="1.5"/>
+                            <line x1="25" y1="10" x2="25" y2="18" stroke="#4A6A7C" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h4>Verification Layers for Factual Accuracy</h4>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="15" height="25" stroke="#4A6A7C" stroke-width="1.5" fill="none"/>
+                            <rect x="28" y="10" width="12" height="30" stroke="#4A6A7C" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <h4>Workflow Automation Recipes</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FAQ (Objection Handling) -->
     <section id="faq" class="faq-section">
         <div class="container">
             <h2>Your (Refreshingly Honest) Questions</h2>
@@ -259,61 +434,47 @@
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Most courses are "prompt packs." They give you a fish. This is a <em>methodology</em>. It teaches you <em>how</em> to fish. It's a systematic framework (the CLO framework) that fixes the <em>root cause</em> of your frustration—inconsistency and generic voice. It's a permanent skill, not a template.</p>
+                        <p>Most courses are collections of prompts or surface-level tips. We teach a systematic methodology—the CLO Framework—that you can apply to any use case. You're not buying templates; you're learning an architecture. Once you understand the system, you can build reliable prompts for any situation, forever.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Do I need to be a "prompt engineer" or super technical?</span>
+                        <span>Won't the AI just change again and make this obsolete?</span>
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>No. I'm not. This system is designed for service providers, consultants, and coaches. It's about clear, logical communication, not code. If you can write a clear email, you can master this.</p>
+                        <p>The tools change, but the principles don't. The CLO Framework is based on fundamental communication architecture, not platform-specific tricks. We've successfully adapted it across GPT-3, GPT-4, Claude, and other models. The methodology evolves with the technology because it's built on timeless structural principles.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Will this work for my specific industry (e.g., finance, law, coaching)?</span>
+                        <span>Is this too technical? I'm not an engineer.</span>
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes. The CLO framework is industry-agnostic. The "Content Scale" part is just the <em>proof</em>. The core methodology works for writing strategic reports, client communications, legal analyses, or marketing copy. The <em>Voice Calibration</em> module, in particular, is designed to adapt to any professional voice.</p>
+                        <p>No coding or engineering background required. This is about communication structure, not programming. If you can write a clear email or create a project brief, you can master this system. Our clients are consultants, coaches, and agency owners—professionals who focus on strategy and communication, not code.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>How long until I see results?</span>
+                        <span>How much time does this actually take to implement?</span>
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>You will see a <em>dramatic</em> difference in your AI output quality within the first 30 minutes of applying the CLO framework. Your prompt success rate will jump on day one.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What tools do I need?</span>
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The core methodology works with ChatGPT (Free or Plus), Claude 3, and most other major models. This is a <em>skill</em>, not a software.</p>
+                        <p>Initial setup: 2-3 hours to learn the framework and build your first systematic prompts. After that, each new use case takes 15-30 minutes to architect properly. Compare that to the 5-10 hours per week you're currently wasting on editing and rework. Most clients see ROI within the first week.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 10: Final Call to Action -->
-    <section id="final-cta" class="final-cta-section">
+    <!-- SECTION 10: Final Call-to-Action -->
+    <section id="framework" class="final-cta-section">
         <div class="container">
             <div class="final-cta-content">
-                <div class="final-cta-text">
-                    <h2>Stop Guessing. Start Systematizing.</h2>
-                    <p class="final-cta-subheadline">Stop wasting hours on prompts that fail 70% of the time. Get the one, proven methodology that makes AI reliable.</p>
-                    <a href="https://practicalprompting.co/sales/" class="cta-button">FIX MY PROMPTS</a>
-                </div>
-                <div class="final-cta-image">
-                    <img src="https://via.placeholder.com/150/ECE9DE/333333?text=Paul+Chambers" alt="Paul Chambers - AI Realist">
-                </div>
+                <h2>Stop Guessing. Start Building.</h2>
+                <p class="final-cta-subheadline">Your AI frustration is a systems problem. We have the solution.</p>
+                <a href="#framework" class="cta-button">See The Framework</a>
             </div>
         </div>
     </section>
@@ -326,8 +487,8 @@
                     <h4>NAVIGATION</h4>
                     <ul>
                         <li><a href="./">Home</a></li>
-                        <li><a href="https://practicalprompting.co/sales/">The Blueprint</a></li>
-                        <li><a href="https://practicalprompting.co/about/">My Story</a></li>
+                        <li><a href="https://practicalprompting.co/framework/">The Framework</a></li>
+                        <li><a href="https://practicalprompting.co/about/">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -355,4 +516,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-
